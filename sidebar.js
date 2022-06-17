@@ -1,9 +1,9 @@
-openMenu = () => {
+const openMenu = () => {
   document.querySelector(".backdrop").classList = "backdrop active";
   document.querySelector("aside").classList = "active";
 };
 
-closeMenu = () => {
+const closeMenu = () => {
   document.querySelector(".backdrop").classList = "backdrop";
   document.querySelector("aside").classList = "";
 };

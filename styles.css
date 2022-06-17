@@ -120,7 +120,11 @@ aside {
        z-index: 999;
        font-size: 15px;
        font-weight: 520;
-       
+       transition: 0.4s ease;
+}
+
+aside.active {
+       right: 0;
 }
 
 aside a {
@@ -139,6 +143,7 @@ aside button.close-button {
        right: 25px;
        font-family: sans-serif;
        font-weight: 110px;
+       cursor: pointer;
 }
 
 .backdrop {
@@ -147,4 +152,8 @@ aside button.close-button {
        inset: 0;
        background-color: (0,0,0,.35);
        backdrop-filter: blur(4px);
+}
+
+.backdrop.active {
+       display: block;
 }
